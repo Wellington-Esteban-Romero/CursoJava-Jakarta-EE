@@ -1,4 +1,4 @@
-package com.webapp.headers.servlets;
+package com.webapp.headers.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
