@@ -1,6 +1,6 @@
-package com.webapp.headers.services;
+package com.webapp.session.services;
 
-import com.webapp.headers.models.Producto;
+import com.webapp.session.models.Producto;
 
 import java.util.List;
 import java.util.Objects;

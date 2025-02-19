@@ -1,4 +1,4 @@
-package com.webapp.headers.controllers;
+package com.webapp.session.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

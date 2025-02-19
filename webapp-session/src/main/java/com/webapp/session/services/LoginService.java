@@ -1,7 +1,6 @@
-package com.webapp.headers.services;
+package com.webapp.session.services;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.Cookie;
 
 import java.util.Optional;
 

@@ -1,10 +1,7 @@
-package com.webapp.headers.controllers;
+package com.webapp.session.controllers;
 
-import com.webapp.headers.models.Carro;
-import com.webapp.headers.models.ItemCarro;
-import com.webapp.headers.models.Producto;
-import com.webapp.headers.services.ProductoService;
-import com.webapp.headers.services.ProductoServiceImpl;
+import com.webapp.session.models.Carro;
+import com.webapp.session.models.ItemCarro;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

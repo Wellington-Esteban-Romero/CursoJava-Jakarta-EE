@@ -1,4 +1,4 @@
-package com.webapp.headers.models;
+package com.webapp.session.models;
 
 import java.util.Objects;
 

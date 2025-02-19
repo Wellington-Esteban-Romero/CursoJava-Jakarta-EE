@@ -1,10 +1,9 @@
-package com.webapp.headers.controllers;
+package com.webapp.session.controllers;
 
-import com.webapp.headers.models.Producto;
-import com.webapp.headers.services.*;
+import com.webapp.session.models.Producto;
+import com.webapp.session.services.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

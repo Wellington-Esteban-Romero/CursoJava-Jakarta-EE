@@ -1,8 +1,7 @@
-package com.webapp.headers.controllers;
+package com.webapp.session.controllers;
 
-import com.webapp.headers.services.LoginService;
-import com.webapp.headers.services.LoginServiceCookieImpl;
-import com.webapp.headers.services.LoginServiceSessionImpl;
+import com.webapp.session.services.LoginService;
+import com.webapp.session.services.LoginServiceSessionImpl;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
