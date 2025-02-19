@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface ProductoService {
     List<Producto> getProductos();
-    Optional<Producto> buscarProducto(String nombre);
+    Optional<Producto> findById(Long id);
 }
