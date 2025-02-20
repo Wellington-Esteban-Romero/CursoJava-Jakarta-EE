@@ -12,7 +12,7 @@
 <% if (carro == null || carro.getItems().isEmpty()) {%>
 <p>No hay productos en el carro compra</p>
 <%} else {%>
-<form action="/webapp-session/actualizar-carro" method="post" name="formCarro">
+<form action="/webapp-session/carro/actualizar" method="post" name="formCarro">
 <table>
     <tr>
         <th>Id</th>

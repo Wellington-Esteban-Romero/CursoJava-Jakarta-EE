@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6577b09-9305-4468-be76-66fd88e45515" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../webapp-session/src/main/java/com/webapp/session/filters/LoginFilter.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6577b09-9305-4468-be76-66fd88e45515" name="Changes" comment="listener-tarea7:&#10;mostrar nombre completo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,11 +107,25 @@
       <workItem from="1740052256171" duration="3449000" />
       <workItem from="1740055957702" duration="9000" />
       <workItem from="1740056127934" duration="32000" />
+      <workItem from="1740056170692" duration="109000" />
     </task>
+    <task id="LOCAL-00001" summary="listener-tarea7:&#10;mostrar nombre completo">
+      <option name="closed" value="true" />
+      <created>1740056196821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740056196821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="listener-tarea7:&#10;mostrar nombre completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="listener-tarea7:&#10;mostrar nombre completo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -55,7 +55,7 @@ public class ProductoServlet extends HttpServlet {
                 out.println("                   <td>" + producto.getTipo() + "</td>");
                 if (username.isPresent()) {
                     out.println("               <td>" + producto.getPrecio() + "</td>");
-                    out.println("               <td><a href='" + req.getContextPath() + "/agregar-carro?id=" +
+                    out.println("               <td><a href='" + req.getContextPath() + "/carro/agregar?id=" +
                             producto.getId() + "'>Agregar al carro</a>" + "</td>");
                 }
                 out.println("                </tr>");

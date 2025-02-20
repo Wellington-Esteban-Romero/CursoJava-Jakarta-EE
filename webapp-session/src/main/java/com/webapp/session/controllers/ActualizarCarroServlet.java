@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Optional;
 
-@WebServlet("/actualizar-carro")
+@WebServlet("/carro/actualizar")
 public class ActualizarCarroServlet extends HttpServlet {
 
     @Override
@@ -47,6 +47,6 @@ public class ActualizarCarroServlet extends HttpServlet {
             }
         }
 
-        resp.sendRedirect(req.getContextPath() + "/ver-carro");
+        resp.sendRedirect(req.getContextPath() + "/carro/ver");
     }
 }
