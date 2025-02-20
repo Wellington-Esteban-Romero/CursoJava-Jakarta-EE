@@ -20,26 +20,31 @@ public class ActualizarCarroServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = req.getSession();
-        Carro carro = (Carro) session.getAttribute("carro");
+        if (session.getAttribute("carro") != null) {
 
-        Enumeration<String> paramNames = req.getParameterNames();
+            Carro carro = (Carro) session.getAttribute("carro");
 
-        while (paramNames.hasMoreElements()) {
-            String paramName = paramNames.nextElement();
-            if (paramName.startsWith("cantidad_")) {
-                Long idProducto = Long.parseLong(paramName.substring(9));
-                Integer cantidad = Integer.valueOf(req.getParameter(paramName));
-                Optional<ItemCarro> optionalItem = carro.getItems().stream()
-                        .filter(productoItem -> productoItem.getProducto().getId().equals(idProducto))
-                        .findAny();
-                optionalItem.ifPresent(itemCarro -> carro.actualizarItem(itemCarro, cantidad));
+            Enumeration<String> paramNames = req.getParameterNames();
+
+            while (paramNames.hasMoreElements()) {
+                String paramName = paramNames.nextElement();
+                if (paramName.startsWith("cantidad_")) {
+                    Long idProducto = Long.parseLong(paramName.substring(9));
+                    Integer cantidad = Integer.valueOf(req.getParameter(paramName));
+                    Optional<ItemCarro> optionalItem = carro.getItems().stream()
+                            .filter(productoItem -> productoItem.getProducto().getId().equals(idProducto))
+                            .findAny();
+                    optionalItem.ifPresent(itemCarro -> carro.actualizarItem(itemCarro, cantidad));
+                }
             }
-        }
 
-        Long idProductoAEliminar = Long.parseLong(req.getParameter("eliminarProductoCheckbox") != null ? req.getParameter("eliminarProductoCheckbox") : "-1");
+            String[] idsProductos = req.getParameterValues("eliminarProductoCheckbox");
 
-        if (idProductoAEliminar != -1L) {
-            carro.eliminarItem(idProductoAEliminar);
+            if (idsProductos != null) {
+                for (String idsProducto : idsProductos) {
+                    carro.eliminarItem(Long.parseLong(idsProducto));
+                }
+            }
         }
 
         resp.sendRedirect(req.getContextPath() + "/ver-carro");

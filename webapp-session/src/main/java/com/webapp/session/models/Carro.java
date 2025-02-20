@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 public class Carro {
-    private List<ItemCarro> items;
+    private final List<ItemCarro> items;
 
     public Carro() {
         items = new ArrayList<>();

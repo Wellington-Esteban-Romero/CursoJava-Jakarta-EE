@@ -24,6 +24,8 @@ public class ProductoServlet extends HttpServlet {
         LoginService loginService = new LoginServiceSessionImpl();
         List<Producto> productos = productoService.getProductos();
         Optional<String> username = loginService.getUsername(req);
+        String mensajeRequest = req.getParameter("mensaje");
+        String mensajeGlobal = getServletContext().getAttribute("mensaje").toString();
 
         try (PrintWriter out = resp.getWriter()) {
 
@@ -59,6 +61,8 @@ public class ProductoServlet extends HttpServlet {
                 out.println("                </tr>");
             }
             out.println("       <table>");
+            out.println("           <p>" + mensajeGlobal +"</p>");
+            out.println("           <p>" + mensajeRequest + "</p>");
             out.println("   </body>");
             out.println("</html>");
         }
